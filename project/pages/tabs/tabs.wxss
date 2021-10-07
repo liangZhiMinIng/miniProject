@@ -1,0 +1,34 @@
+/* pages/tabs/tabs.wxss */
+.buybook{
+  padding: 24rpx;
+  box-sizing: border-box;
+ 
+}
+.h1{
+  font-size:28rpx ;
+  font-weight: bold;
+  /* height: 68rpx; */
+  line-height: 68rpx;
+}
+.smallfont{
+  padding-left: 24rpx;
+  box-sizing: border-box;
+  font-size: var(--themeFontSize);
+  font-weight: normal;
+  /* height: 68rpx; */
+  line-height: 68rpx;
+
+}
+.tabsTitle{
+  display: flex;
+  height: 80rpx;
+}
+.menu1,.menu2{
+  flex:1;
+  font-size: var(--themeFontSize);
+  line-height: 80rpx;
+  text-align: center;
+}
+.boders{
+  border-bottom: 2px solid var(--themeColor);
+}

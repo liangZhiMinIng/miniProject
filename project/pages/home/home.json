@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "top-bar":"/components/TopBar/TopBar"
+  },
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true
+
+}

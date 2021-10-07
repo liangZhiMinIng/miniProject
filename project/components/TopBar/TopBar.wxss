@@ -1,0 +1,17 @@
+.top-bar{
+  height: 100rpx;
+  display: flex;
+  background-color: #1296db;
+  margin-bottom: 2rpx;
+}
+.top-bar-search{
+  display: flex;
+  flex:6;
+  align-items: center;
+}
+.top-bar-right{
+  display: flex;
+  flex:2;
+  align-items: center;
+  justify-content: center;
+}

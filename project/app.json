@@ -1,0 +1,59 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/search/search",
+    "pages/tabs/tabs",
+    "pages/cart/cart",
+    "pages/person/person",
+    "pages/category/category",
+    "pages/highPrice/highPrice",
+    "pages/goodBook/goodBook",
+    "pages/shopping/shopping",
+    "pages/searchResult/searchResult",
+    "pages/orders/orders",
+    "pages/editAddress/editAddress"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "沉箱书社",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true,
+    "backgroundColor":"#9195a3"
+  },
+  "tabBar": {
+    "color":"#363636",
+    "selectedColor": "#1296db",
+    "list":[
+      {
+        "text":"沉箱书社",
+        "pagePath": "pages/home/home",
+        "iconPath": "assets/img/book.png",
+        "selectedIconPath": "assets/img/book-active.png"
+      },
+      {
+        "text":"买家须知",
+        "pagePath": "pages/tabs/tabs",
+        "iconPath": "assets/img/page.png",
+        "selectedIconPath": "assets/img/page-active.png"
+      },
+      {
+        "text":"购物车",
+        "pagePath": "pages/cart/cart",
+        "iconPath": "assets/img/cart.png",
+        "selectedIconPath": "assets/img/cart-active.png"
+      },
+      {
+        "text":"个人中心",
+        "pagePath": "pages/person/person",
+        "iconPath": "assets/img/person.png",
+        "selectedIconPath": "assets/img/person-active.png"
+      }
+    ]
+  },
+  "useExtendedLib": {
+    "weui": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,17 @@
+<view class="rep-book" wx:for="{{smallCategoryObj}}" data-index="{{smallCategoryObj.index}}" wx:key="id">
+      <image src=" {{assetPath +smallCategoryObj[index].path}}"></image>
+      <view class="rep-book-list">
+        <text class="book-list-title">{{smallCategoryObj[index].title}}</text>
+        <view class="copyright">{{item.writer}}
+          <text class="blue-font">{{item.writername}}</text>
+        </view>
+        <view class="copyright">{{item.copyright}}
+          <text class="blue-font">{{item.copyrightname}}</text>
+        </view> 
+        <view class="price2">￥{{item.nowprice}}
+          <text class="small-font">原价：{{item.preprice}}</text>
+        </view>
+        <view class="shop-cart">{{item.buy}}</view>
+        <view class="line"></view>
+      </view>
+    </view>

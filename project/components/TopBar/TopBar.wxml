@@ -1,0 +1,8 @@
+<view class="top-bar">
+  <view class="top-bar-search">
+    <slot name="middle"></slot>
+  </view>
+  <view class="top-bar-right">
+    <slot name="right"></slot>
+  </view>
+</view>

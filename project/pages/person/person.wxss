@@ -1,0 +1,78 @@
+/* pages/person/person.wxss */
+
+.top-bar{
+  background-color: var(--themeColor);
+  height:320rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* margin-bottom: 40rpx; */
+  padding: 32rpx;
+ position: relative;
+  box-sizing: border-box;
+}
+
+.userInfo-avatarUrl{
+  border-radius: 50%;
+  width: 96rpx;
+  height:96rpx;
+  margin-right: 16rpx;
+}
+.userInfo-nickname{
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 20rpx;
+}
+.user-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ position: absolute;
+  width:91%;
+  background-color: #fff;
+  margin-top: 260rpx;
+  height:150rpx;
+  z-index: 2;
+  box-shadow: 0 0 14rpx -2rpx rgb(0 0 0 / 20%);
+  border-radius: 10rpx;
+}
+.list-sheft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.indent{
+  width: 91%;
+  margin: auto;
+  /* margin-top: 110rpx; */
+  box-shadow: 0 0 14rpx -2rpx rgb(0 0 0 / 20%);
+
+}
+.indent-list{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30rpx;
+  box-sizing: border-box;
+}
+.myindent{
+  height:100rpx;
+  line-height:100rpx;
+  border-bottom:1px solid #d6d6db;
+  font-size: 28rpx;
+  font-weight: bold;
+ 
+}
+.indent-list-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.manage{
+  width: 91%;
+  margin:20rpx auto;
+  box-shadow: 0 0 14rpx -2rpx rgb(0 0 0 / 20%);
+}
+.logout{
+  background-color: var(--themeColor);
+  color: #fff;
+}

@@ -1,0 +1,66 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/highPrice/highPrice",
+          "pathName": "pages/highPrice/highPrice",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/tabs/tabs",
+          "pathName": "pages/tabs/tabs",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cart/cart",
+          "pathName": "pages/cart/cart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/person/person",
+          "pathName": "pages/person/person",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/category/category",
+          "pathName": "pages/category/category",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/goodBook/goodBook",
+          "pathName": "pages/goodBook/goodBook",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/goodBook/goodBook",
+          "pathName": "pages/goodBook/goodBook",
+          "query": "id=1",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

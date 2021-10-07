@@ -1,0 +1,79 @@
+<top-bar>
+  <view slot="middle" class="search-input" data-url="/pages/search/search" bindtap="goto">
+    <text class="iconfont icon-soushuo-copy" data-url="/pages/search/search" bindtap="goto" style="margin-right:20rpx;font-size:28rpx"></text>
+请输入搜索内容
+ </view>
+ <view slot="right" class="login">
+  <view  class="iconfont icon-xiaoren" style="font-size:34rpx;color:#fff;" wx:if="{{!hasUserInfo}}"  bindtap="login"></view>
+  <block wx:else>
+    <image class="userInfo-avatarUrl" src="{{userInfo.avatarUrl}}"></image>
+    <text style="#fff">{{userInfo.nicKName}}</text>
+  </block>
+ </view>
+ 
+</top-bar>
+<view class="wrapper">
+<!-- 轮播图 -->
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:340rpx;width:100%" >
+      <block wx:for="{{imgUrls}}" wx:key="id">
+        <swiper-item>
+        <image src="{{assetPath + item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 内容容器 -->
+  <view class="container">
+  <!-- 图标栏目 -->
+    <view class="container-icon"  wx:for="{{BigCategory}}" data-id="{{item.id}}" bindtap="getSmallDetail" wx:key="id">
+      <image class="t-icon" src="{{assetPath+item.path}}"></image>
+      <view class="icon-font">{{item.name}}</view>
+  </view>
+  </view>
+  <!-- <view class="linee"></view> -->
+  <!-- 特价专卖 -->
+  <view class="book-list">
+    <view class="book-list-title">
+    特价专卖
+      <text class="more" data-url="/pages/highPrice/highPrice" bindtap="goto">更多></text>
+    </view>
+    <scroll-view scroll-x="true">
+      <view style="display:flex">
+        <navigator class="book-list-img" style="text-align:center;" wx:for="{{bookList}}" wx:key="id" url="/pages/highPrice/highPrice?id={{item.id}}">
+          <image src="{{assetPath+item.path}}" style=" width: 140rpx;height: 220rpx;" ></image>
+          <text class="price1" style="margin-left:12rpx">{{item.name}}</text>
+          <text class="price2">￥{{item.price}}</text>
+        </navigator>
+      </view>
+      
+    </scroll-view>
+  </view>
+  <!-- 分割线 -->
+  <view class="price2" style="text-align: center; margin:12rpx">📢 满10元包邮（部分地区除外）</view>
+  <!-- 好书推荐 -->
+  <view class="shopping">
+    <view class="book-list-title">
+    好书推荐
+      <text class="more" data-url="/pages/shopping/shopping" bindtap="goto">更多></text>
+    </view>
+    <view class="line"></view>
+    <view class="rep-book" wx:for="{{goodBookList}}" wx:key="id" data-id="{{item.id}}" bindtap="getDetail">
+      <image src="{{assetPath+item.path}}"></image>
+      <view class="rep-book-list">
+        <text class="book-list-title">{{item.title}}</text>
+        <view class="copyright">{{item.writer}}
+          <text class="blue-font">{{item.writername}}</text>
+        </view>
+        <view class="copyright">{{item.copyright}}
+          <text class="blue-font">{{item.copyrightname}}</text>
+        </view> 
+        <view class="price2">￥{{item.nowprice}}
+          <text class="small-font">原价：{{item.preprice}}</text>
+        </view>
+        <!-- <view class="shop-cart">{{item.buy}}</view> -->
+        <view class="line"></view>
+      </view>
+    </view>
+  </view>
+</view>

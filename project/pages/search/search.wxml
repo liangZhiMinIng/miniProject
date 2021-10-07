@@ -1,0 +1,13 @@
+<top-bar>
+  <input slot="middle" class="search-input" model:value="{{content}}" placeholder="请输入内容"/>
+  <view slot="right" class="search-button" data-url="/pages/searchResult/searchResult" bindtap="search">搜索</view>
+</top-bar>
+<view class="search-history">
+  <view class="search-history-title">
+    <view class="left">搜索历史</view>
+    <view class="right" bindtap="delHistory">清空</view>
+  </view>
+  <view class="search-history-content">
+    <view data-url="/pages/searchResult/searchResult" data-content="{{item}}" class="search-history-item" wx:for="{{searchHistory}}" bindtap="quicksearch" wx:key="index">{{item}}</view>
+  </view>
+</view>

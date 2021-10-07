@@ -1,0 +1,37 @@
+
+  <view class="good-img"><image src="{{assetPath + detailObj.path}}"></image></view>
+  <view class="main">
+  <view class="book-list-title">{{detailObj.title}}</view>
+  <view class="writer">{{detailObj.writer}}{{detailObj.writername}}</view>
+  <view>
+  <text style="color:red;margin-right:16rpx;">{{detailObj.nowprice}}</text><text style="font-size:26rpx;font-weight:bold;">现金购书</text>
+  </view>
+  <view class="red-font">满十元包邮（部分地区除外）</view>
+  <view class="kucun">
+  <view>库存: <text style="color:blue;">1670本</text> </view><view style="color:#a89fbe;font-size:26rpx">|</view><view>限购: <text style="color:blue;">5本</text></view>
+  </view>
+  <view class="xiangqing">
+    <view class="box">
+      <text class="box-title">原价</text>
+      <text class="writer">￥{{detailObj.preprice}}</text>
+    </view>
+    <view class="box">
+      <text class="box-title">{{detailObj.writer}}</text>
+      <text class="writer">{{detailObj.writername}}</text>
+      <text>{{}}</text>
+    </view>
+    <view class="box">
+      <text class="box-title">{{detailObj.copyright}}</text>
+      <text class="writer">{{detailObj.copyrightname}}</text>
+    </view>
+    <view class="box">
+      <view class="box-sever" style="font-size: 27rpx;font-weight: 600;">
+        <text>服务</text><text>消毒翻新</text><text>保证正品</text><text>超级划算</text>
+      </view>
+    </view>
+</view>
+<view class="botton-box">
+<view class="cart" catchtap="addShop" data-id="{{item}}">加入购物车</view>
+<view class="buy">立即购买</view>
+</view>
+</view>

@@ -1,0 +1,16 @@
+<navigator class="rep-book" wx:for="{{lowPrice}}" wx:key="id" url="/pages/goodBook/goodBook?id={{item.id}}">
+      <image src="{{assetPath+item.path}}"></image>
+      <view class="rep-book-list">
+        <text class="book-list-title">{{item.title}}</text>
+        <view class="copyright">{{item.writer}}
+          <text class="blue-font">{{item.writername}}</text>
+        </view>
+        <view class="copyright">{{item.copyright}}
+          <text class="blue-font">{{item.copyrightname}}</text>
+        </view> 
+        <text class="price2" style="margin-top:50rpx">{{item.nowprice}}
+        </text>
+        <view class="shop-cart">{{item.buy}}</view>
+        <view class="line"></view>
+      </view>
+</navigator>

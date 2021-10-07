@@ -1,0 +1,32 @@
+<view class="tabsTitle">
+  <text class='menu1 {{menuTapCurrent == "0" ? "boders":""}}' data-current="0" catchtap="menuTab">买书</text>
+  <text class='menu2 {{menuTapCurrent == "1" ? "boders":""}}' data-current="1" catchtap="menuTab">品相情况</text>
+</view>
+<view class="buybook" hidden="{{menuTapCurrent !='0' }}">
+  <view class="h1">  1.书籍介绍 </view>
+  <view class="smallfont">沉箱书社所售书籍均为正版，二手书籍均酒精结清消毒。</view>
+  <view class="smallfont">部分书籍全新带塑封</view>
+  <view class="h1">2.运费</view>
+  <view class="smallfont">现金购书，满10元包邮，新疆、西藏、内蒙古、海南除外。</view>
+  <view class="h1">3.售后</view>
+  <view class="smallfont">非人为毁坏，质量问题可以退换。</view>
+</view>
+<view hidden="{{menuTapCurrent !='1'}}">
+<view class="buybook">
+  <view class="smallfont" style="padding-left: 0rpx;">
+  我们卖的书，都是进行人工审核，书籍品相良好不会影响您二次阅读，大概会有以下几类书籍：
+  </view>
+  <view class="h1">1.轻微破损</view>
+  <view class="smallfont">
+    二手书难免会有一丝破损，但是破损程度不到全书的1%，只是会有些页脚折痕。
+  </view>
+  <view class="h1">2.老化与污渍</view>
+  <view class="smallfont">
+    买家不用担心老化问题，产品都是严格挑选的二手书，页面不会发黄变色，不会出现发霉、污渍、划线过多等情况。
+  </view>
+  <view class="h1">3.激活码类书</view>
+  <view class="smallfont">
+    有些书必须有新的激活码才能使用，本站不提供新的激活码，买书时请详细了解好，在进行购买。
+  </view>
+</view>
+</view>

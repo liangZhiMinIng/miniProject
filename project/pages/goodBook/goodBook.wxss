@@ -1,0 +1,92 @@
+/* pages/goodBook/goodBook.wxss */
+.main{
+  padding: 0rpx 28rpx;
+  box-sizing: border-box;
+}
+.main view{
+  margin-top: 12rpx;
+  margin-bottom: 12rpx;
+}
+.good-img{
+  background-color: #eeecf5;
+  display: flex;
+  justify-content: center;
+}
+.good-img image{
+  width: 340rpx;
+  height:400rpx;
+  /* background-color: aquamarine; */
+}
+.writer{
+  font-size:26rpx;
+  color: #96949b;
+}
+.red-font{
+  padding-left: 12rpx;
+  box-sizing: border-box;
+  height: 40rpx;
+  width: 330rpx;
+  line-height: 40rpx;
+  border-radius: 20rpx;
+  color:red;
+  font-size:24rpx;
+  background-color: rgb(223, 162, 162);
+}
+.kucun{
+  display: flex;
+  justify-content: space-around;
+  padding:22rpx 100rpx;
+  box-sizing: border-box;
+ box-shadow: 0 0 14rpx -2rpx rgb(0 0 0 / 20%);
+}
+.kucun view{
+  font-size: 26rpx;
+  font-weight: 600;
+}
+.xiangqing .box{
+
+  line-height: 70rpx;
+  height: 70rpx;
+  border-bottom:1px solid #e0dee6;
+
+}
+.box-title{
+  display:inline-block;
+  /* background-color: aquamarine; */
+  font-size: 27rpx;
+  font-weight: 600;
+  width: 136rpx;
+}
+.box-sever {
+  display: flex;
+  justify-content: start;
+  
+}
+.box-sever text{
+  margin-right: 80rpx;
+}
+.botton-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ box-shadow: 0 -20 14rpx 12rpx rgb(0 0 0 / 20%);
+}
+.cart{
+  text-align: center;
+  line-height: 70rpx;
+  width: 200rpx;
+  height: 70rpx;
+  margin-right: 40rpx;
+  color: aliceblue;
+  border-radius:35rpx;
+  background-color: orange;
+}
+.buy{
+  text-align: center;
+  line-height: 70rpx;
+  width: 200rpx;
+  height: 70rpx;
+  color: aliceblue;
+  border-radius:35rpx;
+  background-color: red;
+}

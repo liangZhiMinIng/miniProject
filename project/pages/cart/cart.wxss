@@ -1,0 +1,113 @@
+
+.cartList{
+  margin-top: 12rpx;
+  padding: 24rpx;
+  display: flex;
+  padding: 16rpx;
+  box-sizing: border-box;
+  /* flex-direction: column; */
+  border-bottom: 1px solid #a5a4a4;
+}
+.cart-llleft{
+  display: flex;
+  justify-content:space-around;
+  flex: 4;
+}
+.cart-rrright{
+  flex: 6;
+}
+.cart-right{
+  display: flex;
+  justify-content: space-between;
+  /* flex: 8; */
+}
+.cart-thumb{
+  width: 100rpx;
+  height: 140rpx;
+}
+.cart-pro-name{
+  /* margin-left: 18rpx; */
+  font-size: var(--themeFontSize);
+}
+.cart-pro-price{
+  font-size: var(--themeFontSize);
+  /* margin-left: 100rpx; */
+  
+}
+.cart-count-box{
+  margin-top: 40rpx;
+}
+.cart-count-num{
+  margin:auto 70rpx
+}
+.cart-count-add{
+  margin-right: 178rpx;
+}
+.cart-footer{
+  width: 100%;
+  height: 40px;
+  background-color: var(--themeColor);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  padding-left: 48rpx;
+  padding-right: 48rpx;
+  box-sizing: border-box;
+}
+.purchase{
+ 
+  margin-left: auto;
+}
+.begin-cart{
+  
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+.cart-sum{
+  height: 70rpx;
+  line-height: 70rpx;
+  padding-bottom: 16rpx;
+  /* background-color: rgb(170, 56, 56); */
+  border-bottom: 1px solid #a5a4a4;
+}
+.cart-middle{
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0rpx 8rpx 32rpx -10rpx rgb(192 192 192/ 0.5);
+  padding-top:44rpx ;
+  padding-bottom: 44rpx;
+}
+.cart-image{
+  /* margin-top: 30rpx; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300rpx;
+  height: 300rpx;
+  background-color: #f3e6e6bb;
+  border-radius:50% ;
+}
+.cart-img{
+  width: 50%;
+  height: 50%;
+}
+.cart-words{
+  /* margin-bottom: 48rpx; */
+  color: var(--themeColor);
+  font-size: var(--themeFontSize);
+}
+.cart-no-data{
+  color: #fff;
+  margin-top: 48rpx;
+  background-color: var(--themeColor);
+}
+.cart-del{
+  display: inline-block;
+  font-size: 24rpx;
+  border: #a5a4a4;
+}

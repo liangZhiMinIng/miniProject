@@ -1,0 +1,58 @@
+<view class="top-bar">
+  <view class="iconfont icon-xiaoren" style="font-size:34rpx;color:#fff;" wx:if="{{!hasUserInfo}}"  bindtap="login"></view>
+  <view wx:else style="display:flex;margin-bottom:40rpx;">
+    <image class="userInfo-avatarUrl" src="{{userInfo.avatarUrl}}"></image>
+    <view class="userInfo-nickname">{{userInfo.nickName}}</view>
+  </view>
+  <view class="user-list">
+    <view class="list-sheft">
+      <view style="color:orange;">0</view>
+      <view style="font-size:26rpx;padding:16rpx;">我的书架</view>
+    </view>
+    <text style="font-size:26rpx; color:#a89fbe;">|</text>
+    <view class="list-sheft">
+      <view style="color:orange;">0</view>
+      <view style="font-size:26rpx;padding:16rpx;">我的书架</view>
+    </view>
+    <text style="font-size:26rpx; color:#a89fbe;">|</text>
+    <view class="list-sheft">
+      <view style="color:orange;">0</view>
+      <view style="font-size:26rpx;padding:16rpx;">我的书架</view>
+    </view>
+    <text style="font-size:26rpx; color:#a89fbe;">|</text>
+    <view class="list-sheft">
+      <view style="color:orange;">0</view>
+      <view style="font-size:26rpx;padding:16rpx;">我的书架</view>
+    </view>
+  </view>
+</view>
+<view style="position:absolute;margin-top:66rpx;width:100%">
+  <view class="indent">
+    <view  class="myindent"style="text-align:center; margin-bottom: 30rpx;">我的订单</view>
+      <view class="indent-list">
+        <view class="indent-list-box " wx:for="{{detailList}}" wx:key="id" >
+          <image style="width:68rpx;height:80rpx;" src="{{assetPath+item.path}}"></image>
+          <text style="font-size:26rpx;color:#a89fbe;">{{item.name}}</text>
+        </view>
+      </view>
+  </view>
+  <view class="manage">
+    <view class="myindent"style="margin-left:16rpx" data-url="/pages/editAddress/editAddress" bindtap="goto">
+      <text class="" >信息调查</text>
+      <text style="float:right;margin-right:16rpx;color:#a89fbe;">></text>
+    </view>
+    <view class="myindent"style="margin-left:16rpx">
+      <text class="">个人信息</text>
+      <text style="float:right;margin-right:16rpx;color:#a89fbe;">></text>
+    </view>
+    <view class="myindent"style="margin-left:16rpx">
+      <text class="">地址管理</text>
+      <text style="float:right;margin-right:16rpx;color:#a89fbe;">></text>
+    </view>
+    <view class="myindent"style="margin-left:16rpx">
+      <text class="">关于我们</text>
+      <text style="float:right;margin-right:16rpx;color:#a89fbe;">></text>
+    </view>
+  </view>
+  <button class="logout" bindtap="logout">退出登录</button>
+</view>
